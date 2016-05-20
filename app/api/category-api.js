@@ -49,7 +49,9 @@ export function getProfile(categoryId) {
 
       let category = response.data;
       profile.name = category.name;
+      profile.id = category.id;
       profile.desc = !category.desc ? 'No description available' : category.desc;
+      profile.items = !category.items ? 'No items available' : category.items;
 
       store.dispatch(categoryProfileSuccess(profile))
       return

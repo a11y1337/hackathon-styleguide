@@ -2,7 +2,13 @@
   "categories": [
     {
       "id": 1,
-      "name": "Icons"
+      "name": "Icons",
+      "items": [
+        {
+          "id": 1,
+          "name": "Copart"
+        }
+      ]
     },
     {
       "id": 2,

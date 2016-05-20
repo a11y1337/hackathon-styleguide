@@ -4,7 +4,7 @@ import _ from 'lodash';
 const initialState = {
   categories: [],
   categoryProfile: {
-    repos: []
+    items: []
   }
 };
 

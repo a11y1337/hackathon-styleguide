@@ -21368,7 +21368,7 @@
 	var initialState = {
 	  categories: [],
 	  categoryProfile: {
-	    repos: []
+	    items: []
 	  }
 	};
 	
@@ -43296,7 +43296,9 @@
 	
 	    var category = response.data;
 	    profile.name = category.name;
+	    profile.id = category.id;
 	    profile.desc = !category.desc ? 'No description available' : category.desc;
+	    profile.items = !category.items ? 'No items available' : category.items;
 	
 	    _store2.default.dispatch((0, _categoryActions.categoryProfileSuccess)(profile));
 	    return;
